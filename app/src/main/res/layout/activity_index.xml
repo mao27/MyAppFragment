@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.test.myappfragment.IndexActivity">
+    <!--标题-->
+    <include layout="@layout/titlebar" ></include>
+    <!--内容-->
+    <FrameLayout
+        android:id="@+id/fl_common"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="center">
+    </FrameLayout>
+    <!--底部-->
+    <RadioGroup
+        android:id="@+id/rg_index"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:orientation="horizontal"
+        android:background="@color/colorSeashell1">
+        <RadioButton
+            android:id="@+id/rb_common_home"
+            android:text="首页"
+            android:drawableTop="@drawable/rb_common_home_drawable_selector"
+            style="@style/rb_bottom_style" />
+        <RadioButton
+            android:id="@+id/rb_common_mall"
+            android:text="中心"
+            android:drawableTop="@drawable/rb_common_mall_drawable_selector"
+            style="@style/rb_bottom_style" />
+        <RadioButton
+            android:id="@+id/rb_common_shop"
+            android:text="商城"
+            android:drawableTop="@drawable/rb_common_shop_drawable_selector"
+            style="@style/rb_bottom_style" />
+        <RadioButton
+            android:id="@+id/rb_common_mine"
+            android:text="我的"
+            android:drawableTop="@drawable/rb_common_mine_drawable_selector"
+            style="@style/rb_bottom_style" />
+
+    </RadioGroup>
+</LinearLayout>
